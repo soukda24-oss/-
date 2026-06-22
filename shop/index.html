@@ -1,0 +1,142 @@
+html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้าน ซุ้ยขายถูก - เสื้อผ้าคุณภาพ ราคาถูก</title>
+    <style>
+        /* สไตล์หลักของหน้าเว็บ */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* หัวข้อ */
+        h1, h2, p {
+            text-align: center;
+        }
+
+        /* กรอบหลักสำหรับสินค้าทั้งหมด */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* กรอบสินค้าแต่ละชิ้น - เพิ่มขอบสีฟ้าอ่อนตรงนี้ */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            
+            /* --- โค้ดเพิ่มขอบสีฟ้าอ่อนที่คุณขอ --- */
+            border: 4px solid #ADD8E6; /* สีฟ้าอ่อน (Light Blue) */
+        }
+
+        /* รูปภาพสินค้า - ตั้งค่าให้เห็นเต็มตัว */
+        .card img {
+            width: 100%;
+            height: 300px; /* กำหนดความสูงคงที่เพื่อให้การ์ดเท่ากัน */
+            
+            /* --- โค้ดที่ทำให้เสื้อเห็นเต็มตัว --- */
+            object-fit: contain; /* ปรับขนาดรูปไม่ให้ล้นและเห็นเต็มตัว */
+            
+            background-color: #f0f0f0; /* สีพื้นหลังรูปภาพกรณีที่รูปเล็กกว่ากรอบ */
+            border-radius: 8px 8px 0 0;
+        }
+
+        /* ชื่อสินค้า */
+        .card h3 {
+            margin: 15px 0 5px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* ราคา */
+        .card .price {
+            font-size: 1.3em;
+            color: #d9534f;
+            font-weight: bold;
+            margin: 0 0 15px 0;
+        }
+
+        /* ปุ่มสั่งซื้อ */
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebe57;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ร้าน ซุ้ยขายถูก</h1>
+    <p>เสื้อผ้าคุณภาพ ราคาถูก</p>
+
+    <div class="container">
+        <!-- สินค้าชิ้นที่ 1 -->
+        <div class="card">
+            <!-- ⚠️ สำคัญ: เปลี่ยนชื่อไฟล์ให้ตรงกับรูปภาพของคุณ -->
+            <img src="img1.JPG.jpg" alt="เสื้อผ้าแฟชั่น">
+            <h3>เสื้อผ้าแฟชั่น</h3>
+            <div class="price">150,000 กีบ</div>
+            <a href="https://wa.me/8562098950092" target="_blank">
+            <button>สั่งซื้อ WhatsApp</button>
+        </div>
+
+        <!-- สินค้าชิ้นที่ 2 -->
+        <div class="card">
+            <!-- ⚠️ สำคัญ: เปลี่ยนชื่อไฟล์ให้ตรงกับรูปภาพของคุณ -->
+            <img src="img2.JPG.jpg" alt="เสื้อผ้าสวย">
+            <h3>เสื้อผ้าสวย</h3>
+            <div class="price">150,000 กีบ</div>
+            <a href="https://wa.me/8562098950092" target="_blank">
+            <button>สั่งซื้อ WhatsApp</button>
+        </div>
+           
+         <div class="card">
+        <img src="img4.JPG.jpg">
+        <h3>เสื้อผ้าฮิต</h3>
+        <div class="price">150,000 ກີບ</div>
+        <a href="https://wa.me/8562098950092" target="_blank">
+            <button>สั่งซื้อ WhatsApp</button>
+        </a>
+    </div>
+     <div class="card">
+        <img src="3.JPG.jpg">
+        <h3>เสื้อผ้าฮิต</h3>
+        <div class="price">150,000 ກີບ</div>
+        <a href="https://wa.me/8562098950092" target="_blank">
+            <button>สั่งซื้อ WhatsApp</button>
+        </a>
+    </div>
+
+</div>
+        
+        <!-- คุณสามารถเพิ่มสินค้าชิ้นอื่นๆ โดยก๊อปปี้กรอบ <div class="card"> ด้านบนไปวางต่อกันได้เลยครับ -->
+
+    </div>
+
+</body>
+</html>
